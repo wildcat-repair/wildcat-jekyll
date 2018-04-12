@@ -1,0 +1,21 @@
+<script src="/assets/js/all.js"></script>
+<script type="application/ld+json">
+{ "@context": "http://schema.org", 
+  "@type": "Webpage",
+  "keywords": "{{ site.keywords }}", 
+  "url": "{{ site.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "sameAs": [
+        "{{ site.linkedin }}"
+    ]
+  }
+}
+</script>
+</body>
+</html>

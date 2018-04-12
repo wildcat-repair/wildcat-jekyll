@@ -1,0 +1,40 @@
+// animation stuff
+.pulse {
+    @include pulse;
+}
+svg g path {
+    &.logo-line {fill:none; stroke:#ffffff; stroke-miterlimit:10; stroke-width:8px}
+    &.words {fill:#fff; opacity: 0;}
+    &.line-anim-0 {
+        stroke-dasharray: 436 438;
+        stroke-dashoffset: 437;
+        animation: line-anim-draw 1450ms ease 0ms forwards;
+    }
+    &.line-anim-1 {
+        stroke-dasharray: 307 309;
+        stroke-dashoffset: 308;
+        animation: line-anim-draw 1450ms ease 25ms forwards;
+    }
+    &.line-anim-2 {
+        stroke-dasharray: 120 122;
+        stroke-dashoffset: 121;
+        animation: line-anim-draw 1450ms ease 50ms forwards;
+    }
+    &.words-1 {
+        animation: fade-in 500ms ease 800ms forwards;
+    }
+    &.words-2 {
+        animation: fade-in 700ms ease 1200ms forwards;
+    }
+}
+
+@keyframes line-anim-draw {
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-in {
+    0%   { opacity: 0; transform: translateX(40px);}
+    100% { opacity: 1; }
+}

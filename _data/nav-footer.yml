@@ -1,0 +1,14 @@
+- title: email Steven
+  label: steven@gottliebgroup.consulting
+  url: mailto:steven@gottliebgroup.consulting
+  icon: icon-email.svg
+
+- title: Tap to call
+  label: 206-427-9591
+  url: tel:206-427-9591
+  icon: icon-phone.svg
+
+- title: connect on linkedIn
+  label: LinkedIn
+  url: https://www.linkedin.com/in/steven-gottlieb-4766835/
+  icon: icon-ui-linkedin-white.svg

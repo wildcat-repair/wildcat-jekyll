@@ -1,0 +1,62 @@
+# Site settings
+language:               "english"
+title:                  "Wildcat Repair"
+description:            "Wildcat Repair"
+google-verification:    ""
+url:                    "https://www.wildcat.repair"
+keywords:               ""
+author:                 ""
+# twitter:              ""
+# linkedin:               ""
+yelp:                   "yelp.com"
+
+# Handling Reading
+include:
+  - ".htaccess"
+  - "_pages"
+
+exclude:
+  - "/assets/"
+  - "bower.json"
+  - "composer.json"
+  - "composer.lock"
+  - "DOC.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "/gulp/"
+  - "gulpfile.js"
+  - "LICENSE.md"
+  - "Makefile"
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "README.md"
+  - "rev-manifest.json"
+  - "yarn.lock"
+
+# Plugins
+# Add plugins in the Gemfile
+
+plugins:
+  - jekyll-inline-svg
+# svg:
+#   optimize: true
+
+
+# Conversion
+incremental:      true
+
+# Serving
+# url:            ""
+# baseurl:        "" # does not include hostname
+
+# Outputting
+permalink:        "/articles/:year/:title/"
+paginate_path:    "/articles/page:num"
+paginate:         5
+
+compress_html:
+  ignore:
+    envs: [development]
+
+highlighter:      rouge
