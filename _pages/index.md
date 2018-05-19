@@ -107,6 +107,20 @@ title: Wildcat Repair
         <p class="lead">Robbie Haanen has 30 years of experience repairing every sort of small engine and tools, from simple to complex.</p>
       </div>
     </div>
+    <div class="grid-x grid-margin-x align-middle align-center">
+      <div class="cell small-12 medium-6 large-5">
+        <p>I have called Oregon home for over 26 years, currently residing in the Brightwood area with my wife and 2 step-sons.</p>
+        <p>I grew up working in a manufacturing shop for my step-father from 9-19 years of age where I gained fabrication, welding and machining experience. I took automotive and R.O.P. Autobody in high school. I’ve worked over 18 years professionally as a diesel, automotive, small tool mechanic and welder.</p>
+      </div>
+      <div class="cell small-12 medium-6 large-5">
+        <h4 class="headline-4">Mission statement:</h4>
+        <p>In today’s world, it is common to see customer service based businesses providing mediocre service to their customers.</p>
+        <p>My goal at Wildcat Repair is to accomplish the basic fundamentals of building a good business relationship with my customers. </p>
+        <p>I will provide excellent customer service because that is what I would want. I plan to earn your business by demonstrating integrity, trust worthiness,honesty and value.</p>
+      </div>
+      <div class="cell small-12 large-4">
+      </div>
+    </div>
   </div>
 </section>
 
