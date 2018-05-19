@@ -1,0 +1,258 @@
+// --------------------------------------------------
+
+// Theme
+// --------------------------------------------------
+
+$headlines: (
+    headline-1: 54,
+    headline-2: 42,
+    headline-3: 36,
+    headline-4: 30,
+    headline-5: 24,
+    subhead   : 18
+);
+// required SASS variables: $gray-1:  hsl(202, 10%, 8%);
+$gray-1:  hsl(202, 15%, 5%);
+$gray-2:  hsl(202, 15%, 16%);
+$gray-3:  hsl(202, 15%, 25%);
+$gray-4:  hsl(202, 15%, 33%);
+$gray-5:  hsl(202, 12%, 41%);
+$gray-6:  hsl(202, 12%, 50%);
+$gray-7:  hsl(202, 12%, 58%);
+$gray-8:  hsl(202, 12%, 66%);
+$gray-9:  hsl(202, 12%, 75%);
+$gray-10: hsl(202, 10%, 83%);
+$gray-11: hsl(202, 10%, 91%);
+$gray-12: hsl(202, 10%, 96);
+
+// for color functions
+$gray-list: (
+    gray-1 : $gray-1,
+    gray-2 : $gray-2,
+    gray-3 : $gray-3,
+    gray-4 : $gray-4,
+    gray-5 : $gray-5,
+    gray-6 : $gray-6,
+    gray-7 : $gray-7,
+    gray-8 : $gray-8,
+    gray-9 : $gray-9,
+    gray-10: $gray-10,
+    gray-11: $gray-11,
+    gray-12: $gray-12
+);
+
+$color-red: hsl(349, 62%, 50%);
+$color-red-dark: adjust-color($color-red, $lightness: -10%);
+
+@mixin opacity($alpha){
+    opacity: $alpha;
+}
+@mixin container-pad() {
+    // padding: 5.5vw 4vw;
+    padding: 2rem 1rem; // any rows & cols should handle padding at small viewports. - AW
+}
+// centered bg images
+@mixin background-fill ($align...) { // center center
+    background:{
+        repeat: no-repeat !important;
+        position: $align !important;
+        size: cover;
+    }
+}
+$font-family-headline: 'Overpass', sans-serif;
+$font-family-text: 'Lato', sans-serif;
+
+
+html, body {
+    font-family: $font-family-text;
+}
+.headline-1, .headline-2, .headline-3, .headline-4, .headline-5 {
+    font-family: $font-family-headline;
+    font-weight: 700;
+}
+
+@each $name, $color in $gray-list { // this generates all grays 1-12 (dark to lightest), sets color
+    $color-hsl: hsl-str($color);
+    .#{$name} {
+        $color-lightness: lightness($color);
+        @if $color-lightness >= 50% {
+            color: #000;
+        }
+        @else {
+            color: #fff;
+        }
+        background-color: $color;
+    }
+}
+
+.section {
+    &-pad {
+        padding: 4vw;
+    }
+    &-pad--sm {
+        padding: 2vw 3vw;
+    }
+    &-pad--lg {
+        padding: 6vw 4vw;
+    }
+    &-line {
+        border-bottom: 5px solid $color-red;
+    }
+}
+
+.container { // this is generally only for color & image settings on containers
+    &-red {
+        background-color: $color-red-dark;
+        color: white;
+    }
+    &-texture {
+        &--blueprint {
+            $line-bright: rgba(0,0,0,.3);
+            $line: rgba(0,0,0,.1);
+            background-color: $gray-3;
+            background-image: linear-gradient($line-bright 1px, transparent 1px),
+            linear-gradient(90deg, $line-bright 1px, transparent 1px),
+            linear-gradient($line 1px, transparent 1px),
+            linear-gradient(90deg, $line 1px, transparent 1px);
+            background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+            background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+        }
+    }
+    &-image {
+        &--fill {
+            @include background-fill (center top);
+        }
+        &--center {
+            @include background-fill (center center);
+        }
+        &--fixed {
+            background:{
+                attachment: fixed;
+                repeat: no-repeat;
+                size: cover;
+                position: center center;
+            }
+            // -webkit-background-size: cover;
+            // -moz-background-size: cover;
+            // -o-background-size: cover;
+        }
+        &--top {
+            @include background-fill (center top);
+            background-size: contain;
+        }
+        &--middle {
+            @include background-fill (center center);
+            background-size: contain;
+        }
+        &--bottom {
+            @include background-fill (center bottom);
+            // background-size: contain;
+        }
+    }
+}
+.avatar {
+    border-radius: 100%;
+}
+.person {
+    &-vertical {
+        text-align: center;
+        .avatar {
+            margin-bottom: 1rem;
+        }
+    }
+}
+.icon {
+    &-large {
+        height: 8rem;
+        width:  8rem;
+    }
+}
+a {
+    // font-family: $font-family-headline;
+    font-weight: 700;
+}
+.ribbon {
+    &-white {
+        border: 1px solid white;
+        padding: 0.1em 0.3em;
+        display: inline-block;
+        margin-bottom: 0.3em;
+    }
+    &-black {
+        border: 1px solid black;
+        padding: 0.1em 0.3em;
+        display: inline-block;
+        margin-bottom: 0.3em;
+    }
+}
+.text {
+    &-black {color: black;}
+    &-white {color: white;}
+    &-spaced {
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+}
+.link {
+    &-light {
+        color: white;
+        transition: border-bottom 150ms linear;
+        border-bottom: 1px solid hsla(255,255,255, 0.5);
+        &:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+.logo-small {
+    max-height: 2rem;
+}
+// .thumb {
+//     &-med {
+//         max-width: 4rem;
+//     }
+// }
+.button {
+    font-family: $font-family-headline;
+    font-weight: 700;
+    @extend .text-spaced;
+    &.primary {
+        background-color: $color-red;
+        &:hover, &:active, &:focus {
+            background-color: adjust-color($color-red, $lightness: -10%);
+        }
+        color: white;
+    }
+    &.secondary {
+        background-color: white;
+        &:hover {
+            background-color: adjust-color(white, $lightness: -10%);
+        }
+        color: $gray-1;
+    }
+}
+
+.svg-icon {
+    display: inline-flex;
+    align-self: center;
+    position: relative;
+    height: 1em;
+    width: 1em;
+    & svg {
+        height: 1em;
+        width: 1em;
+    }
+    &.svg-baseline svg {
+        bottom: -0.125em;
+        position: absolute;
+    }
+}
+a[href^="tel:"] {
+    font-weight: 700;
+    font-family: $font-family-headline;
+    @extend .text-white;
+    &:before {
+        content: "\260e";
+        margin-right: 0.5em;
+    }
+}

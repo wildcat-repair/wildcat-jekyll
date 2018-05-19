@@ -1,103 +1,125 @@
 ---
 permalink: /
 layout: index
-title: Gottlieb Group Consulting
+title: Wildcat Repair
 ---
-<header class="container-brand container-vignette fixed ">
-<a id="top"></a>
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x align-middle section-block-primary">
-      <div class="cell small-12 text-center">
-      	{% include components/logo-large.html %}
-        <div class="div text-center show-for-large">
-          <a href="#intro" class="icon-next" title="Take a Giant Step" data-smooth-scroll="data-smooth-scroll" data-offset="-40" data-animation-easing="swing">
-        	{% svg "/assets/img/icon-arrow-down.svg" class="arrow pulse icon-xlarge svg-color--white"  preserveAspectRatio="xMidYMid meet" %}
-          </a>
-        </div>  
-      </div>
-    </div>
-  </div>
-</header>
 
-<nav class="section-nav show-for-medium" data-sticky-container="data-sticky-container">
-  <ul class="menu container-brand drop align-center transition" data-sticky="data-sticky" data-options="marginTop:0;" data-top-anchor="intro">
-    <li>
-      <a class="nav-item nav-logo" href="/" title="main">{% svg "/assets/img/ggc-logo-small.svg" class="svg-color--white show-for-large logo-nav"  preserveAspectRatio="xMidYMid meet" %}</a>
-    </li>
-  	{% for item in site.data.nav-main %}
-      <li data-smooth-scroll="data-smooth-scroll" data-offset="50" data-animation-easing="swing"><a class="nav-item" href="#{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
-    {% endfor %}
-    <li>
-      <a class="nav-item" href="/inspire" title="Inspire">Inspire</a>
-    </li>
-  </ul>
-</nav>
-<div class="container-white">
-<section class="section-pad" id="intro">
+<!-- (data-interchange="[" + img_path + "co_rgb:ffffff,e_brightness:-45,w_800,c_fill,ar_2:1" + img_metal1 + ", small], [" + img_path + "co_rgb:ffffff,e_brightness:-75/e_blur:600/w_1600,c_fill,ar_2:1/" + img_metal1 + ", medium]") --><a id="top"></a>
+<section class="section-pad--lg container-red container-image--fill">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x align-center">
-      <div class="cell small-12 medium-3 large-3 text-right-on-medium">
-        <h3 class="headline-2 text-light">Take <span class="text-bold">Giant Steps</span> in Impact and Influence</h3>
-      </div>
-      <div class="cell small-12 medium-9 large-6">
-        <p>Gottlieb Group develops and improves ideas and strategies to advance market opportunities and to better community initiatives. We develop positions, concepts, relationships and projects that impact decision-making and identity. And we help clients take giant steps in their market, industry and community influence through outcome focused creative and anticipatory approaches. Simply put, we always look to find a better way.</p>
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-4"><a href="#top">{% svg "/assets/img/wildcat-logo-white.svg" class="arrow pulse icon-xlarge svg-color--white" preserveAspectRatio="xMidYMid meet" %}</a></div>
+      <div class="cell small-8 text-right">
+        <h6 class="headline-4 text-spaced">Automotive systems | tools | welding</h6><a class="headline-5 link-light" href="tel:503.593.1204">503.593.1204</a>
       </div>
     </div>
   </div>
 </section>
-<aside id="services" class="grid-container">
-  <div class="grid-x align-center">
-    <div class="cell small-12 medium-10 large-8 xlarge-6 text-center">
-      <img src="/assets/img/ggc-art-rings.svg" class="" alt="Industry + Innovation | Science + Research | Civi + Public"/>
-    </div>  
+<section class="gray-7">
+  <div class="grid-container full">
+    <div class="grid-x">
+      <div class="cell auto"><img class="thumb-med" src="https://res.cloudinary.com/rawmedia/image/upload//ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1/v1504470782/air_powered_buffer_yl9epa.jpg" alt="tools"/></div>
+      <div class="cell auto"><img class="thumb-med" src="https://res.cloudinary.com/rawmedia/image/upload//ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1/v1504483513/lawnmower_-_3741268066_ef82c5596f_o_ncxnsi.jpg" alt="tools"/></div>
+      <div class="cell auto"><img class="thumb-med" src="https://res.cloudinary.com/rawmedia/image/upload//ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1/v1504470782/small_engine_2_iztb2q.jpg" alt="tools"/></div>
+      <div class="cell auto"><img class="thumb-med" src="https://res.cloudinary.com/rawmedia/image/upload//ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1/v1504470781/cutting_lb83wh.jpg" alt="tools"/></div>
+      <div class="cell auto"><img class="thumb-med" src="https://res.cloudinary.com/rawmedia/image/upload//ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1/v1504467085/construction_tools_site_taduuda-76960_rq91ea.jpg" alt="tools"/></div>
+    </div>
   </div>
-</aside>
-<section class="section-pad">
+</section>
+<section class="section-pad gray-2 container-image--fill" data-interchange="[https://res.cloudinary.com/rawmedia/image/upload//w_800,c_fill,ar_2:1/v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, small], [https://res.cloudinary.com/rawmedia/image/upload//w_1600,c_fill,ar_2:1//v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, medium]"> 
   <div class="grid-container">
-    <div class="grid-x grid-margin-x align-center">
-      <div class="cell small-12 medium-3 large-3 text-right-on-medium">
-        <h2 class="headline-4">Services</h2>
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <h3 class="headline-3">Keep your trusted tools trusty</h3>
       </div>
-      <div class="cell small-12 medium-9 large-6">
-        <p>To help clients make impactful decisions, and reinforce or advance their identity, Gottlieb Group Communications utilizes techniques from <strong>corporate communications, content creation, film production, management consulting, research, and public affairs.</strong> The firm is also brought into special situations.</p>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-6 large-6"> 
+        <p class="lead">Wildcat Repair can repair your small engine tools as well as specialized in AC and electrical repair for vehicles. We work fast, give you a great value, and do everything we can to ensure you are happy with the result.</p>
+      </div>
+      <div class="cell small-12 medium-6 large-6">
+        <ul>
+          <li>Tool repair</li>
+          <li>Small engine repair</li>
+          <li>AC repair</li>
+          <li>More services</li>
+        </ul><a class="button primary large" href="#start" data-smooth-scroll="data-smooth-scroll" data-options="animation-easing: swing;">Get started</a>
       </div>
     </div>
   </div>
 </section>
-<section class="section-pad" id="bio">
+<!-- .container-image--fill(data-interchange="[" + img_path + "/w_800,c_fill,ar_2:1" + img_site1_light + ", small], [" + img_path + "/w_1600,c_fill,ar_2:1/" + img_site1_light + ", medium]") -->
+<section class="section-pad gray-5">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x align-center">
-      <div class="cell small-12 medium-3 large-3 text-right-on-medium">
-        <h3 class="headline-4">Biography</h3>
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-12 large-6">
+        <h4 class="headline-2">Pricing & Services</h4>
+        <p>Wildcat Repair can perform a wide variety of repair and services to keep your tools sharp, your small engines running smoothly and at peak performance.</p>
       </div>
-      <div class="cell small-12 medium-9 large-6">
-        <aside class="person-vertical float-right">
-          <img class="avatar avatar-large float-right" src="/assets/img/steven-gottlieb-portrait-2018-tighter-crop.jpg" alt="Steven Gottlieb">
-          <h3 class="person-label">Steven Gottlieb</h3>
-        </aside>
-        <p>Over the course of his career, <strong>Steven has worked with a broad and diverse set of organizations</strong> from Fortune 100 companies to founders of emerging technologies companies; scientists working in the fields of materials science, energy storage, and vaccines; financiers of innovation and real estate; top administrators of health care systems and university presidents; artists and athletes; elected officials and government institutions; and global aid and health professionals.</p>
-        <p>Earlier in his career, he held various positions at the Anti-Defamation League, in Denver and San Diego, where he oversaw regional civil rights initiatives and managed public opinion on a variety of First Amendment issues.</p>
-        <p>Gottlieb received Highest Honors from the University of California, Santa Cruz, earning a Bachelor of Arts in Modern Society and Social Thought. His paper about the American Press during the Holocaust resides at the United States Holocaust Museum and Archives in Washington DC.</p>
-        <p><strong>Competition has always played an important part in his life:</strong> Steven is a two-time NCAA All-American and 1989 NCAA tennis champion. And he provides pro bono counsel to the International Tennis Hall of Fame in Newport, Rhode Island.</p>
-        <hr class="divider-body">
-        <p><strong>Two central components of Gottlieb’s life are business and sports &mdash; he works with an aggressive and enthusiastic spirit.</strong> And listening to jazz is something he enjoys doing in his free time. Jazz is also an important connective tissue for how he marries business focus and athletic roots. In business and sports there is an improvisational necessity that occurs within set and agreed upon boundaries. He uses “Giant Steps” in his company’s tagliine (“Take Giant Steps In Impact and Influence”) for a reason. <em>Giant Steps</em> was recorded by John Coltrane in 1959 and stands out as a standard because of Coltrane’s mission to present a unified sound.</p>
+    </div>
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-12 medium-6 large-5">
+        <ul>
+          <li>Lawnmower engine repair: $75/hour</li>
+          <li>Small engine repair</li>
+          <li>AC repair</li>
+          <li>Need something not on the list? <a class="link-light" href="#start">Call us today</a>.</li>
+        </ul>
+      </div>
+      <div class="cell small-12 medium-6 large-5"></div>
+    </div>
+  </div>
+</section>
+<section class="section-pad gray-12">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-12 large-6"> 
+        <h3 class="headline-3">We come to you</h3>
+        <p class="lead">Our truck can come to you anywhere in the Portland metro area.</p>
+      </div>
+      <div class="cell small-12 large-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.711189242003!2d-122.08519204905835!3d45.37482274732159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549589498cc9c2af%3A0xd2a6c3c6286b9c8d!2s20370+SE+Hummingbird+Ln%2C+Sandy%2C+OR+97055!5e0!3m2!1sen!2sus!4v1504485516747" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+<section class="section-pad gray-2 container-texture--blueprint">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle align-center">
+      <div class="cell small-12 medium-6 large-5">
+        <div class="person-vertical"><img class="avatar icon-large" src="http://res.cloudinary.com/rawmedia/image/upload/v1526231244/robbie-haanen-portrait-2017_hayeun.jpg"/>
+          <h4 class="headline-4">Robbie Haanen</h4>
+          <p>Founder, Wildcat Tool Repair</p>
+        </div>
+      </div>
+      <div class="cell small-12 medium-6 large-5">
+        <h3 class="headline-3">Meet Robbie</h3>
+        <p class="lead">Robby Haanen has 30 years of experience repairing every sort of small engine and tools, from simple to complex.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="section-pad" id="step">
+<section class="section-pad container-red section-line" id="start">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x align-center">
-      <div class="cell small-12 medium-3 large-3 text-right-on-medium">
-        <h3 class="text-callout">Take a Giant Step</h3>
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-12 text-center">
+        <h4 class="headline-2 text-spaced ribbon-white">Start your repair today</h4>
       </div>
-      <div class="cell small-12 medium-9 large-6">
-        <p class="text-sans text-larger group">It’s what Gottlieb Group Communications does: bring all the available resources together to develop impact opportunities so clients can take Giant Steps. It’s always about finding a better way.</p>
-        <p>
-          <a href="#contact" class="icon-next" title="Take a Giant Step" data-smooth-scroll="data-smooth-scroll" data-offset="" data-animation-easing="swing">
-            {% svg "/assets/img/icon-arrow-down.svg" class="arrow pulse icon-large svg-color--brand" %}
-          </a>
+    </div>
+    <div class="grid-x align-center align-middle grid-padding-x small-up-2 medium-up-4 large-up-6 text-center">
+      <div class="cell"> 
+        <p>Call or text us today at 
+          <tel class="link-light">503.593.1204</tel>
         </p>
+      </div>
+      <div class="cell">
+        <p>Visit us on <a class="link-light" href="facebook.com">Facebook</a></p>
+      </div>
+      <div class="cell">
+        <p>Check us out on <a class="link-light" href="yelp.com">Yelp</a></p>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-12 text-center">
+        {% svg "/assets/img/wildcat-logo-white.svg" class="arrow pulse icon-xlarge svg-color--white" preserveAspectRatio="xMidYMid meet" %}
       </div>
     </div>
   </div>

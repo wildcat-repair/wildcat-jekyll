@@ -2,7 +2,7 @@
   <ul class="list-styled">
     {% for item in site.data.nav-footer %}
       <li>
-      	{% svg "/assets/img/{{ item.icon }}" class="svg-color--white svg-icon icon-inline icon-large"  preserveAspectRatio="xMidYMid meet" %}
+      	{% svg "/assets/img/icons/{{ item.icon }}" class="svg-color--white svg-icon icon-inline icon-large"  preserveAspectRatio="xMidYMid meet" %}
       	<a class="" href="{{ item.url }}" title="{{ item.title }}">{{ item.label }}</a>
       </li>
     {% endfor %}
