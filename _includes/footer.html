@@ -3,13 +3,14 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-middle">
       <div class="cell small-12 text-center">
-        <h4 class="headline-2 text-spaced ribbon-white">Start your repair today</h4>
+        {% svg "/assets/img/wildcat-logo-white.svg" class="logo-large group svg-color--white" preserveAspectRatio="xMidYMid meet" %}
+        <h4 class="headline-2 text-spaced text-black">Start your repair today</h4>
       </div>
     </div>
-    <div class="grid-x align-center align-middle grid-padding-x small-up-2 medium-up-4 large-up-6 text-center">
-      <div class="cell"> 
+    <div class="grid-x align-center align-middle grid-padding-x small-up-1 medium-up-3 large-up-4 text-center">
+      <div class="cell lead"> 
         <p>Call or text us today at 
-          <tel class="link-light">503.593.1204</tel>
+          <a class="headline-5 link-light" href="tel:{{ site.phone }}">{{ site.phone }}</a>
         </p>
       </div>
       <div class="cell">
@@ -17,11 +18,6 @@
       </div>
       <div class="cell">
         <p>Check us out on <a class="link-light" href="yelp.com">Yelp</a></p>
-      </div>
-    </div>
-    <div class="grid-x grid-margin-x align-middle">
-      <div class="cell small-12 text-center">
-        {% svg "/assets/img/wildcat-logo-white.svg" class="logo-large svg-color--white" preserveAspectRatio="xMidYMid meet" %}
       </div>
     </div>
   </div>

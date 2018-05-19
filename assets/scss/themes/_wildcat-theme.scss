@@ -109,13 +109,14 @@ html, body {
         &--blueprint {
             $line-bright: rgba(0,0,0,.3);
             $line: rgba(0,0,0,.1);
-            background-color: $gray-3;
+            background-color: $gray-4;
             background-image: linear-gradient($line-bright 1px, transparent 1px),
             linear-gradient(90deg, $line-bright 1px, transparent 1px),
             linear-gradient($line 1px, transparent 1px),
             linear-gradient(90deg, $line 1px, transparent 1px);
             background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-            background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+            background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+            background-attachment: fixed;
         }
     }
     &-image {
@@ -198,6 +199,7 @@ a {
         color: white;
         transition: border-bottom 150ms linear;
         border-bottom: 1px solid hsla(255,255,255, 0.5);
+        font-weight: 700;
         &:hover {
             color: white;
             border-bottom: 1px solid white;
@@ -209,6 +211,7 @@ a {
 }
 .logo-large {
     max-height: 5rem;
+    max-width: 100%;
 }
 // .thumb {
 //     &-med {
@@ -267,4 +270,12 @@ a[href^="tel:"] {
         content: "\260e";
         margin-right: 0.5em;
     }
+}
+// === utilities
+.group {
+    margin-bottom: 2vw;
+}
+
+.no-margin {
+    margin-bottom: 0;
 }
