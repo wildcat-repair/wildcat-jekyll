@@ -8,9 +8,38 @@ title: Wildcat Repair
 <section class="section-pad--lg container-red container-image--fill">
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-middle">
-      <div class="cell small-4"><a href="#top">{% svg "/assets/img/wildcat-logo-white.svg" class="arrow pulse icon-xlarge svg-color--white" preserveAspectRatio="xMidYMid meet" %}</a></div>
+      <div class="cell small-4"><a href="#top">{% svg "/assets/img/wildcat-logo-white.svg" class="logo-large svg-color--white" preserveAspectRatio="xMidYMid meet" %}</a></div>
       <div class="cell small-8 text-right">
         <h6 class="headline-4 text-spaced">Automotive systems | tools | welding</h6><a class="headline-5 link-light" href="tel:503.593.1204">503.593.1204</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-pad gray-2 container-image--fill" data-interchange="[https://res.cloudinary.com/rawmedia/image/upload//w_800,c_fill,ar_2:1/v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, small], [https://res.cloudinary.com/rawmedia/image/upload//w_1600,c_fill,ar_2:1//v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, medium]"> 
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <h3 class="headline-3">Keep the tools you depend on in top condition</h3>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-4 large-6"> 
+        <p class="lead">Wildcat Repair can repair your small engine tools as well as specialized in AC and electrical repair for vehicles. We work fast, give you a great value, and do everything we can to ensure you are happy with the result.</p>
+        <a class="button primary large" href="#start" data-smooth-scroll="data-smooth-scroll" data-options="animation-easing: swing;">Get started</a>
+      </div>
+      <div class="cell small-12 medium-4 large-3">
+        <ul>
+          <li>Tool repair</li>
+          <li>Small engine repair</li>
+          <li>AC repair</li>
+          <li>More services</li>
+        </ul>
+      </div>
+      <div class="cell small-12 medium-4 large-3">
+        <div class="person-vertical"><img class="avatar icon-large" src="http://res.cloudinary.com/rawmedia/image/upload/v1526231244/robbie-haanen-portrait-2017_hayeun.jpg"/>
+          <h4 class="headline-4">Robbie Haanen</h4>
+          <p>Founder, Wildcat Tool Repair</p>
+        </div>
       </div>
     </div>
   </div>
@@ -26,28 +55,7 @@ title: Wildcat Repair
     </div>
   </div>
 </section>
-<section class="section-pad gray-2 container-image--fill" data-interchange="[https://res.cloudinary.com/rawmedia/image/upload//w_800,c_fill,ar_2:1/v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, small], [https://res.cloudinary.com/rawmedia/image/upload//w_1600,c_fill,ar_2:1//v1504467997/construction_tools_site_taduuda-76960_tint_tmo80n.jpg, medium]"> 
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12">
-        <h3 class="headline-3">Keep your trusted tools trusty</h3>
-      </div>
-    </div>
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12 medium-6 large-6"> 
-        <p class="lead">Wildcat Repair can repair your small engine tools as well as specialized in AC and electrical repair for vehicles. We work fast, give you a great value, and do everything we can to ensure you are happy with the result.</p>
-      </div>
-      <div class="cell small-12 medium-6 large-6">
-        <ul>
-          <li>Tool repair</li>
-          <li>Small engine repair</li>
-          <li>AC repair</li>
-          <li>More services</li>
-        </ul><a class="button primary large" href="#start" data-smooth-scroll="data-smooth-scroll" data-options="animation-easing: swing;">Get started</a>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- .container-image--fill(data-interchange="[" + img_path + "/w_800,c_fill,ar_2:1" + img_site1_light + ", small], [" + img_path + "/w_1600,c_fill,ar_2:1/" + img_site1_light + ", medium]") -->
 <section class="section-pad gray-5">
   <div class="grid-container">
@@ -97,30 +105,4 @@ title: Wildcat Repair
     </div>
   </div>
 </section>
-<section class="section-pad container-red section-line" id="start">
-  <div class="grid-container">
-    <div class="grid-x grid-margin-x align-middle">
-      <div class="cell small-12 text-center">
-        <h4 class="headline-2 text-spaced ribbon-white">Start your repair today</h4>
-      </div>
-    </div>
-    <div class="grid-x align-center align-middle grid-padding-x small-up-2 medium-up-4 large-up-6 text-center">
-      <div class="cell"> 
-        <p>Call or text us today at 
-          <tel class="link-light">503.593.1204</tel>
-        </p>
-      </div>
-      <div class="cell">
-        <p>Visit us on <a class="link-light" href="facebook.com">Facebook</a></p>
-      </div>
-      <div class="cell">
-        <p>Check us out on <a class="link-light" href="yelp.com">Yelp</a></p>
-      </div>
-    </div>
-    <div class="grid-x grid-margin-x align-middle">
-      <div class="cell small-12 text-center">
-        {% svg "/assets/img/wildcat-logo-white.svg" class="arrow pulse icon-xlarge svg-color--white" preserveAspectRatio="xMidYMid meet" %}
-      </div>
-    </div>
-  </div>
-</section>
+

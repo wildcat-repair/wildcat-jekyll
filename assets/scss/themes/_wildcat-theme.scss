@@ -207,6 +207,9 @@ a {
 .logo-small {
     max-height: 2rem;
 }
+.logo-large {
+    max-height: 5rem;
+}
 // .thumb {
 //     &-med {
 //         max-width: 4rem;
@@ -232,6 +235,15 @@ a {
     }
 }
 
+svg {
+    text {
+        font-family: $font-family-headline, Roboto Light, sans-serif; 
+        font-weight: 400;
+    }
+     // normalize with css var
+    fill: currentColor;
+    // stroke: currentColor;
+}
 .svg-icon {
     display: inline-flex;
     align-self: center;
