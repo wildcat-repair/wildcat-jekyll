@@ -5,3 +5,23 @@
     {% endfor %}
   </ul>
 </nav>
+
+<!-- Mobile nav, currently not in use  -->
+<a class="pos-rel" data-toggle="mobile-nav-container mobile-nav-toggle">
+  <div id="mobile-nav-toggle" data-toggler="is-open" class="nav-toggle-button hide-for-medium">
+    {% svg "/assets/img/icons/icon-menu.svg" class="icon svg-color--white"  preserveAspectRatio="xMidYMid meet" %}
+  </div>
+</a>
+
+<nav id="mobile-nav-container" class="mobile-nav hide-for-medium grid-x align-bottom" data-toggler="is-open">
+  <div class="cell small-12">
+    <ul class="menu vertical container-brand">
+      {% for item in site.data.nav-main %}
+        <li><a class="nav-item" href="/#{{ item.url }}" title="{{ item.title }}" data-toggle="mobile-nav-container mobile-nav-toggle">{{ item.title }}</a></li>
+      {% endfor %}
+<!--       <li>
+        <a class="nav-item" href="/inspire" title="Inspire">Inspire</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>

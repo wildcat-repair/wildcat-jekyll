@@ -4,22 +4,14 @@
 {% include components/nav-menu.html %}
 </header>
 {% endcomment %}
-
-<a class="pos-rel" data-toggle="mobile-nav-container mobile-nav-toggle">
-  <div id="mobile-nav-toggle" data-toggler="is-open" class="nav-toggle-button hide-for-medium">
-    {% svg "/assets/img/icons/icon-menu.svg" class="icon svg-color--white"  preserveAspectRatio="xMidYMid meet" %}
+<section class="section-pad--lg container-red container-image--fill">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle">
+      <div class="cell small-4"><a href="#top">{% svg "/assets/img/wildcat-logo-white.svg" class="logo-large svg-color--white" preserveAspectRatio="xMidYMid meet" %}</a></div>
+      <div class="cell small-8 text-right">
+        <h6 class="headline-4">Mobile Automotive & RV Service &amp; Repair</h6>
+        <a class="headline-5 link-light" href="tel:{{ site.phone }}">{{ site.phone }}</a>
+      </div>
+    </div>
   </div>
-</a>
-
-<nav id="mobile-nav-container" class="mobile-nav hide-for-medium grid-x align-bottom" data-toggler="is-open">
-  <div class="cell small-12">
-    <ul class="menu vertical container-brand">
-      {% for item in site.data.nav-main %}
-        <li><a class="nav-item" href="/#{{ item.url }}" title="{{ item.title }}" data-toggle="mobile-nav-container mobile-nav-toggle">{{ item.title }}</a></li>
-      {% endfor %}
-<!--       <li>
-        <a class="nav-item" href="/inspire" title="Inspire">Inspire</a>
-      </li> -->
-    </ul>
-  </div>
-</nav>
+</section>

@@ -206,12 +206,17 @@ a {
         }
     }
 }
-.logo-small {
-    max-height: 2rem;
-}
-.logo-large {
-    max-height: 5rem;
-    max-width: 100%;
+.logo {
+    &-small {
+        max-height: 2rem;
+    }
+    &-medium {
+        max-height: 3rem;
+    }
+    &-large {
+        max-height: 5rem;
+        max-width: 100%;
+    }
 }
 // .thumb {
 //     &-med {
