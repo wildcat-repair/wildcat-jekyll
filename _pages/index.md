@@ -80,7 +80,7 @@ title: Wildcat Repair
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-middle align-center">
       <div class="cell small-12 medium-6 large-5">
-        <div class="person-vertical"><img class="avatar icon-large" src="http://res.cloudinary.com/rawmedia/image/upload/ar_1:1,c_thumb,g_center,q_auto:good,w_500,ar_1:1,e_gamma:25/v1526231244/robbie-haanen-portrait-2017.jpg"/>
+        <div class="person-vertical"><img class="avatar icon-large" src="/assets/img/robbie-haanen-portrait-2017-sm.jpg"/>
           <h4 class="headline-4 no-margin">Robbie Haanen</h4>
           <p>Founder, Wildcat Tool Repair</p>
         </div>
