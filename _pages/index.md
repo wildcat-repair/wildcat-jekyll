@@ -59,6 +59,23 @@ title: Wildcat Repair
     </div>
   </div>
 </section>
+<section id="testimonial" class="section-pad gray-11">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x align-middle align-center">
+      <div class="cell small-12 text-center text-red">
+        {% svg "/assets/img/icons/wildcat-icon-white.svg" class="logo-medium svg-color--red" %}
+        <!-- <h4 class="headline-2">Services</h4> -->
+      </div>
+      <div class="cell small-12 medium-8 large-7 xlarge-10">
+        <blockquote class="quote-large">
+          <p>When my riding mower broke down, Robbie came out with his truck and did the repair in less than an hour. I had no easy way to transport the mower, so his mobile service was very helpful. He works fast, is really pleasant to work with, and did a great job.</p>
+          <footer>— Allan White, Gresham, Oregon</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="about" class="section-pad gray-2 container-texture--blueprint">
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-middle align-center">

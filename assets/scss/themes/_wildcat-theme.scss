@@ -70,6 +70,58 @@ html, body {
     font-family: $font-family-headline;
     font-weight: 700;
 }
+blockquote { // markup guide: http://html5doctor.com/blockquote-q-cite/. Using <footer> for quoter
+    font: {
+        size: 1.7rem;
+        weight: 300;
+    }
+    quotes: '“' '”';
+    p:before, p:after {
+        position: absolute;
+        font-family: Georgia, serif;
+        color: $gray-8;
+    }
+    p:before {
+        content: open-quote;
+        // mobile defaults
+        font-size: 290%;
+        margin-left: -0.5em;
+        top: -0.9rem;
+        @include breakpoint (medium) {
+            font-size: 490%;
+            margin-left: -0.5em;
+            top: -3rem;
+        }
+    }
+    // for multiple p in bq:
+    // p:after {content: '';
+    //     content: no-close-quote;
+    // } p:last-child:after below
+    p:after {
+        content: close-quote;
+        font-size: 200%;
+        bottom: 2.4rem;
+        @include breakpoint (medium) {
+            font-size: 350%;
+            bottom: -0.5rem;
+            margin-left: 0.6rem;
+        }
+        opacity: 0.5;
+    }
+    &.quote-large {
+        position: relative;
+    }
+    footer {
+        margin-top: 1.5rem;
+        font: {
+            size: 1.4rem;
+            style: italic;
+            weight: 300;
+            color: $gray-3;
+        }
+    }
+}
+
 
 @each $name, $color in $gray-list { // this generates all grays 1-12 (dark to lightest), sets color
     $color-hsl: hsl-str($color);
@@ -189,6 +241,9 @@ a {
 .text {
     &-black {color: black;}
     &-white {color: white;}
+    &-red {
+        color: $color-red-dark;
+    }
     &-spaced {
         letter-spacing: 0.15em;
         text-transform: uppercase;
@@ -218,6 +273,20 @@ a {
         max-width: 100%;
     }
 }
+a .logo {
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+// .logo-hover {
+//     transition: box-shadow 200ms linear;
+//     box-shadow: 1px 1px 1px black(0.1);
+//     &:hover {
+//         box-shadow: 1px 1px 10px black(0.5);
+//         color: white;
+//     }
+// }
 // .thumb {
 //     &-med {
 //         max-width: 4rem;
